@@ -611,11 +611,11 @@ for KEY in $RedefinedKeysGamepad; do
 done
 
 if [ "$MultiABI" = "y" ] ; then
-	MultiABI="all"
+	MultiABI="armeabi armeabi-v7a x86 mips"
 elif [ "$MultiABI" = "n" ] ; then
 	MultiABI="armeabi"
 else
-	MultiABI="$MultiABI"
+	MultiABI="armeabi armeabi-v7a x86 mips"
 fi
 
 LibrariesToLoad="\\\"sdl_native_helpers\\\", \\\"sdl-$LibSdlVersion\\\""
